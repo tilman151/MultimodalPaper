@@ -1,37 +1,61 @@
-\documentclass[a4]{scrartcl}
+\documentclass[a4paper]{article}
 
-\usepackage[utf8]{inputenc}
+\usepackage{INTERSPEECH2016}
+
+\usepackage{graphicx}
+\usepackage{amssymb,amsmath,bm}
+\usepackage{textcomp}
+
+\def\vec#1{\ensuremath{\bm{{#1}}}}
+\def\mat#1{\vec{#1}}
+
+
+\sloppy % better line breaks
+\ninept
 
 \title{Multimodal Corpora}
-\subtitle{An Introduction And Three Samples}
-\author{Three Amigos}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% If multiple authors, uncomment and edit the lines shown below.       %%
+%% Note that each line must be emphasized {\em } by itself.             %%
+%% (by Stephen Martucci, author of spconf.sty).                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\def\name#1{\gdef\@name{#1\\}}
+\makeatother
+\name{{\em Tuan Pham Minh, Nils Harder, Tilman Krokotsch}}
+%%%%%%%%%%%%%%% End of required multiple authors changes %%%%%%%%%%%%%%%%%
+
+\address{Otto-von-Guericke-University Magdeburg \\
+  Faculty of Computer Science \\
+  Faculty of Electrical Engineering and Information Technology \\
+  {\small \tt \{tuan.pham, nils.harder, tilman.krokotsch\}@st.ovgu.de}
+}
+
+%
 \begin{document}
 
-	\maketitle
-	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \maketitle
+  %
+  \begin{abstract}
+    This paper is a short summary of three multimodal corpora for the course MMK in the winter term
+    16/17 at the Otto-von-Guericke-University Magdeburg. The concept and aim of multimodal corpora is 
+    explained. Afterwards three exemplary corpora are described. This includes the recording process 
+    and the proposed application context, as well as the quality and quantity of the data.
+  \end{abstract}
+  \noindent{\bf Index Terms}: human machine interaction, multimodal corpora, computional linguistics
 
-	\section{Introduction}
-	
-		\subsection{Definitions}
-		
-		\subsection{Aim Of Multimodal Corpora}
-		
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
-		
-	\section{First Corpus}
-	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-	
-	\section{Second Corpus}
-	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-	
-	\section{Third Corpus}
-	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-	
-	\section{Conclusion}
+
+
+  \section{Introduction}
+
+    
+
+
+  \newpage
+  \eightpt
+  \bibliographystyle{IEEEtran}
+
+  \bibliography{thebib}
 
 \end{document}
