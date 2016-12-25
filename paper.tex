@@ -6,6 +6,7 @@
 \usepackage{amssymb,amsmath,bm}
 \usepackage{textcomp}
 \usepackage{todo}
+\usepackage{glossaries}
 
 \def\vec#1{\ensuremath{\bm{{#1}}}}
 \def\mat#1{\vec{#1}}
@@ -29,6 +30,11 @@
   {\small \tt \{tuan.pham, nils.harder, tilman.krokotsch\}@st.ovgu.de}
 }
 
+%Acronyms
+\newacronym{saga}{SaGA}{Bielefeld Speech and Gesture Alignment Corpus}
+\newacronym{dfg}{DFG}{German Research Foundation}
+\newacronym{lrec}{LREC}{Language Resources and Evaluation Conference}
+
 %
 \begin{document}
 
@@ -38,27 +44,41 @@
     	This paper is a short summary of three multimodal corpora for the course MMK in the winter term 16/17 at the Otto-von-Guericke-University Magdeburg. The concept and aim of multimodal corpora is explained. Afterwards three exemplary corpora are described. This includes the recording process and the proposed application context, as well as the quality and quantity of the data.
   	\end{abstract}
   	\noindent{\bf Index Terms}: human machine interaction, multimodal corpora, computional linguistics
-
-	% Introduction to the definitions and principles of multimodal data
+  	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
   	\section{Introduction}
 		\Todo{Add definitions and intro to multimodal corpora}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 	\section{First Corpus}
 		\Todo{Add first corpus}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 	
 	\section{Second Corpus}
 		\Todo{Add second corpus}
 	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+	
 	\section{The Bielefeld Speech and Gesture Alignment Corpus ( SaGA )}
+		The \gls{saga} was produced by a research group at the University of Bielefeld and funded by the \gls{dfg}. It was carried out in the CRC 673 "Alignment in Communication" and published in the proceedings of the workshop "Multimodal Corpora-Advances in Capturing, Coding and Analyzing Multimodality" at the \gls{lrec} in 2010 \cite{Bielefeld2010}.
+		
+		The aim of the corpus was to portray the interplay of speech and gesture in face to face conversations. This task was taken on by a interdisicplinary approach. On the one hand the research team took a linguistic perspective to enable Theoretical Linguistic Reconstructions based on the corpus data, and on the other hand took the perspective of computer science to implement the lingusistic findings for multimodal communication in virtual agents and robots. \cite[Ch. 1]{Bielefeld2010}
 	
 		\subsection{Recording Scenario}
 		
 		\subsection{Recorded Data}
+			\subsubsection{Primary Data}
+			
+			\subsubsection{Secondary Data}
 		
 		\subsection{Evaluation}
 		
 		\subsection{Application}
+		
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
   	\newpage
   	\eightpt
