@@ -7,6 +7,15 @@
 \usepackage{textcomp}
 \usepackage{todo}
 \usepackage{glossaries}
+\usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+\usepackage{varioref}
+
+\labelformat{section}{Section~#1}
+\labelformat{subsection}{Section~#1}
+\labelformat{subsubsection}{Section~#1}
+\labelformat{equation}{Eq.~#1}
+\labelformat{figure}{Figure~#1}
+\labelformat{table}{Table~#1}
 
 \def\vec#1{\ensuremath{\bm{{#1}}}}
 \def\mat#1{\vec{#1}}
@@ -31,9 +40,10 @@
 }
 
 %Acronyms
-\newacronym{saga}{SaGA}{Bielefeld Speech and Gesture Alignment Corpus}
+\newacronym{saga}{SaGA}{Bielefeld Speech and Gesture Alignment}
 \newacronym{dfg}{DFG}{German Research Foundation}
 \newacronym{lrec}{LREC}{Language Resources and Evaluation Conference}
+\newacronym{vr}{VR}{Virtual Reality}
 
 %
 \begin{document}
@@ -63,16 +73,53 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 	
 	\section{The Bielefeld Speech and Gesture Alignment Corpus ( SaGA )}
-		The \gls{saga} was produced by a research group at the University of Bielefeld and funded by the \gls{dfg}. It was carried out in the CRC 673 "Alignment in Communication" and published in the proceedings of the workshop "Multimodal Corpora-Advances in Capturing, Coding and Analyzing Multimodality" at the \gls{lrec} in 2010 \cite{Bielefeld2010}.
+		The \gls{saga} corpus was produced by a research group at the University of Bielefeld and funded by the \gls{dfg}. It was carried out in the CRC 673 "Alignment in Communication" and published in the proceedings of the workshop "Multimodal Corpora-Advances in Capturing, Coding and Analyzing Multimodality" at the \gls{lrec} in 2010.
 		
-		The aim of the corpus was to portray the interplay of speech and gesture in face to face conversations. This task was taken on by a interdisicplinary approach. On the one hand the research team took a linguistic perspective to enable Theoretical Linguistic Reconstructions based on the corpus data, and on the other hand took the perspective of computer science to implement the lingusistic findings for multimodal communication in virtual agents and robots. \cite[Ch. 1]{Bielefeld2010}
+		The aim of the corpus was to portray the interplay of speech and gesture in face to face conversations. This task was taken on by a interdisicplinary approach. On the one hand the research team took a linguistic perspective to enable Theoretical Linguistic Reconstructions based on the corpus data, and on the other hand took the perspective of computer science to implement the lingusistic findings for multimodal communication in virtual agents and robots. \cite[ch. 1]{Bielefeld2010}
 	
 		\subsection{Recording Scenario}
-		
+			As the goal was to record speech in combination with gestures, the recording scenario had to chosen such that a sufficient amount of gestures was produced by the speaker. Furthermore the gestures should be easily interpretable to aid the annotation process and not externally forced to prevent unnatural ones. Therefore a scenario with the following properties was chosen \cite[ch. 2]{Bielefeld2010}:	
+			\begin{itemize}
+				\item The topic of the recorded converations was a spatial communication task. The participant had to give directions and describe landmarks. The descision for this topic was based on the evidence for a higher use of gestures, when speaking about spatial topics, provided by \cite[p. 313]{Alibali2005}. This ensured the appropriate amount of easily interpretable gestures.
+				\item The stimulus for the participants was a "bus tour" through a virtual city. This was presented in \gls{vr} to make sure ensure the exact same stimulus for each participant. This improved the comparibility of the individual participant data.
+				\item After receiving the stimulus, the participant had to describe the "bus tour" and the included landmarks to another person, who has not seen the stimulus. This provided a natural yet controlled conversation scenario for the participant.
+			\end{itemize}	
+						
 		\subsection{Recorded Data}
 			\subsubsection{Primary Data}
-			
+				The primary data comprises tree synchronized camera perspectives, the audio feed of the conversation, as well as body movement and eye tracking data of the direction giving participant. The camera perspectives include a frontal shot of the direction giver, one of the follower, and one of the whole dialog scenario. The key specifications of the corpus given by \cite[ch. 2.1]{Bielefeld2010} and \cite{BAS2014} are summarized in \ref{table:sagaIndicators}. Further technical specifications of the primary data was not available.
+				
+				\begin{table}
+					\center
+					\begin{tabular}{|l|c|}
+					\hline 
+					\textbf{Specification} & \textbf{Value} \\ 
+					\hline 
+					Number of dialogs & 25 \\ 
+					\hline 
+					Video time & 280 minutes \\ 
+					\hline 
+					Video specification & 720x576, 25fps  \\ 
+					\hline 
+					Video codec & H.264  \\ 
+					\hline 
+					Video feeds & 3 \\ 
+					\hline 
+					Audio feeds & 1 \\ 
+					\hline 
+					Words & 39,435 \\ 
+					\hline 
+					Iconic/Deictic gestures & 4961 \\ 
+					\hline 
+					Discourse gestures & approx. 1000 \\ 
+					\hline 
+					\end{tabular} 
+					\caption{Specifications of the \gls{saga} corpus}
+					\label{table:sagaIndicators}
+				\end{table}
+				
 			\subsubsection{Secondary Data}
+				
 		
 		\subsection{Evaluation}
 		
