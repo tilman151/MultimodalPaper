@@ -40,12 +40,17 @@
 }
 
 %Acronyms
+
+\newacronym{bas}{BAS}{Bavarian Archive for Speech Signals}
+\newacronym{sm}{SM}{SmartKom}
+
 \newacronym{saga}{SaGA}{Bielefeld Speech and Gesture Alignment}
 \newacronym{dfg}{DFG}{German Research Foundation}
 \newacronym{lrec}{LREC}{Language Resources and Evaluation Conference}
 \newacronym{vr}{VR}{Virtual Reality}
 \newacronym{asl}{ASL}{American Sign Language}
 \newacronym{ssi}{SSI}{Smart Sensor Integration}
+
 
 \newacronym{callas}{Callas}{Conveying Affectiveness in Leading edge Living Adaptive Systems}
 %
@@ -65,7 +70,27 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	\section{First Corpus}
+	\section{BAS SmartKom Corpus} 
+		The \gls{bas} SmartKom Corpus is a multimodal corpus of audio and video data created during the SmartKom-Project at the University of Munich as a Cooperation between Daimler/Chrysler, DFKI, European Media Lab (EML), Philips, Media Interface, Siemens,	SONY, and the Universities of Erlangen, Munich, Stuttgart. \cite{schiel2002smartkom}. The project finished in 2001 and the resulting corpus was released to the public in July 2002. It consists of annotated and synchronized audio and video files of subjects interacting with the SmartKom User-Interface, with 45 subjects and two 4,5 minute sessions per subject.
+		\subsection{Motivation}
+			 The goal of the SmartKom-Project  was the development of Computer-User-Interfaces enabling natural interaction.The focus was the investigation of possibilities of multi-modal interaction using natural speech input, two-dimensional gestures and facial expressions.
+			 A secondary inquiry was into the possibility of user authentication and verification using the available biometric measures(voice, hand contour and signature).
+				 
+		\subsection{Recording Scenario}
+			The sessions consisted of  Wizard-Of-Oz experiments asking the subjects to solve different tasks without strong guidance. One Task given as an example was the planning of a trip to a cinema, including finding information about nearby cinemas and ordering of tickets. The different Scenarios varied between the sessions and were categorized by
+			\begin{itemize}
+				\item recording setup (Public, Home or Mobile)
+				\item primary task
+				\item secondary task
+				\item available input methods
+				\item recording environment (noise, background of frontal camera)
+				\item user profile (gender, age, education, etc.)
+			\end{itemize}
+		\subsubsection{Experiment Setup}
+				The system used for most data acquisition consisted of a graphical tablet onto which the Interface was projected, multiple Microphones as well as four cameras oriented to record facial expressions, a full-body side-view and the interaction area in color and infrared. The output of the system is through the projected graphical interface and synthesized speech and is controlled as an Wizard of Oz Experiment with two wizards in a separate Room controlling the experiment. 
+				
+		\subsection{Recorded Data}
+		
 		\Todo{Add first corpus}
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
@@ -137,9 +162,9 @@
 				
 				\begin{itemize}
 					\item Annotation tier
-					\item start point in time
-					\item end point in time
-					\item annotation value
+					\item Start point in time
+					\item End point in time
+					\item Annotation value
 				\end{itemize}								
 				
 				The tiers form a hierachy in the annotation and can contain different annotaion values:
@@ -159,9 +184,9 @@
 					\begin{itemize}
 						\item Preparation
 						\item Stroke
-						\item retraction
-						\item pre-hold
-						\item post-hold
+						\item Retraction
+						\item Pre-hold
+						\item Post-hold
 					\end{itemize}
 					\item The \textbf{practice} tier describes the meaning of a gesture by the way it is performed. Move, beat and discourse gestures are not annotated this way. Following practices can be assigned:
 					\begin{description}
