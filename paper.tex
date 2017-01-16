@@ -71,7 +71,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 	\section{BAS SmartKom Corpus} 
-		The \gls{bas} SmartKom Corpus is a multimodal corpus of audio and video data created during the SmartKom-Project at the University of Munich as a Cooperation between Daimler/Chrysler, DFKI, European Media Lab (EML), Philips, Media Interface, Siemens,	SONY, and the Universities of Erlangen, Munich, Stuttgart. \cite{schiel2002smartkom}. The project finished in 2001 and the resulting corpus was released to the public in July 2002. It consists of annotated and synchronized audio and video files of subjects interacting with the SmartKom User-Interface, with 45 subjects and two 4,5 minute sessions per subject.
+		The \gls{bas} SmartKom Corpus is a multimodal corpus of audio and video data created during the SmartKom-Project at the University of Munich as a Cooperation between Daimler/Chrysler, DFKI, European Media Lab (EML), Philips, Media Interface, Siemens,	SONY, and the Universities of Erlangen, Munich, Stuttgart. \cite{schiel2002smartkom}. The project finished in 2001 and the resulting corpus was released to the public in July 2002. It consists of annotated and synchronized audio and video files of subjects interacting with the SmartKom User-Interface, with 45 subjects and two 4,5 minute sessions per subject. Afterwards until 2003 more sessions were recorded with the final count being 172 sessions from 86 different users in the final version of the corpus \cite{basSKP}
 		\subsection{Motivation}
 			 The goal of the SmartKom-Project  was the development of Computer-User-Interfaces enabling natural interaction.The focus was the investigation of possibilities of multi-modal interaction using natural speech input, two-dimensional gestures and facial expressions.
 			 A secondary inquiry was into the possibility of user authentication and verification using the available biometric measures(voice, hand contour and signature).
@@ -91,7 +91,45 @@
 				
 		\subsection{Recorded Data}
 		
-		\Todo{Add first corpus}
+		\subsubsection{Primary Data}
+			The corpus is not homogeneous because some modalities were not recorded in certain scenarios, but most sessions contain the following data streams:
+			\begin{itemize}
+			\item Video of face, frontal and fixed position
+			\item Video of the upper body, from the left, fixed
+			\item Infrared Video of projected Interface for Hand tracking
+			\item 10 Audio channels
+			\begin{itemize}
+				\item 4 element microphone array
+				\item directed microphone
+				\item headset and/or lapel microphone
+				\item stereo background noise 
+				\item system output
+			\end{itemize}
+			\item Graphical System output, low framerate
+			\item Combined Stream of all 4 video streams
+			\item Coordinates of finger tip or pencil position		
+			\end{itemize} 
+			The data streams are saved as seperate files, but share a common timebase and run synchronously. The combined video stream was provided with regard to the limited processing power available at the time of released and consist of scaled down and synchronized versions of the original video streams and the directed microphone to enable simple playback for labeling and transcription.  
+			With these channels each session takes up about 4.5 GB of disk space and is distributed using DVD-R because of the low bandwidth connections available.
+		
+		\subsubsection{Secondary Data}
+			The corpus contains the following annotations
+			\begin{itemize}
+				\item Transliteration of audio channel 
+				\item Turn segmentation
+				\item Segmentation and labeling of gestures in two dimensions
+				\item Segmentation and labeling of user state
+				\begin{itemize}
+					\item using facial and speech information
+					\item using only facial information 
+				\end{itemize}
+				\item Segmentation and labeling of prosodic features to recognize emotions
+			\end{itemize}
+			The annotations are available in TRS and TRP format for linguistic and prosodic labeling as well as the BAS Partitur File (BPF) which summarizes all annotations regarding a dialog partner. For details about the BPF format see \cite{schiel2002integration}
+				
+		\subsection{Applications}
+			The SmartKom Corpus has been used in the field of emotion recognition as it contains large amounts of natural and non-staged interactions. For this purpose a special version of the Corpus (SKAUDIO)\cite{basAUDIO} containing only the audio channels and all annotations was created to reduce the amount of storage needed. 
+			Wahlster \cite{wahlster2003towards} used the SmartKom system and corpora to investigate possibilities and problems in symmetrical multimodal systems, especially regarding backchanneling and crossmodal references.
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 	
