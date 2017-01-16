@@ -2,6 +2,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage{subfigure}
+\usepackage{caption}
 
 \title{Multimodal Corpora}
 \subtitle{A brief summary with three examples}
@@ -25,7 +26,97 @@
 	
 	\section{BAS SmartKom Corpus} 	
 	
-	\section{The CALLAS Expressivity Corpus}	
+	\section{The CALLAS Expressivity Corpus}			
+		\subsection{General Information}
+			\begin{frame}{The CALLAS Expressivity Corpus}{Motivation}			
+				\begin{itemize}
+					\item not yet released
+					\item first introduced in 2010 \cite{2010MultimodalCorpusForGestureExpressivity}
+					\item second publication with a more detailed description and first results in 2013 \cite{Caridakis2013}
+					\item modalities:
+					\begin{itemize}
+						\item audio
+						\item video
+						\item gestures
+					\end{itemize}
+					\item part of the Conveying Affectiveness in Leading edge Living Adaptive
+Systems (Callas) project
+				\end{itemize}											
+			\end{frame}		
+			\begin{frame}{The CALLAS Expressivity Corpus}{Motivation}			
+				\begin{itemize}
+					\item collaborative work:
+					\begin{itemize}
+						\item National Technical University of Athens
+							\begin{itemize}
+								\item G. Caridakis
+								\item A. Raouzaiou
+								\item K. Karpouzis
+							\end{itemize}
+						\item the Augsburg University
+							\begin{itemize}
+								\item J. Wagner
+								\item F. Lingenfelser
+								\item E. Andre
+							\end{itemize}
+						\item Humanware S.r.l.
+							\begin{itemize}
+								\item Z. Curto
+							\end{itemize}
+					\end{itemize}
+				\end{itemize}											
+			\end{frame}		
+			
+		\subsection{Motivation}
+			\begin{frame}{The CALLAS Expressivity Corpus}{Motivation}			
+				\begin{itemize}
+					\item capturing cross-cultural differences in gestural emotion expression
+					\item creating a more realistic corpus with a high variance in data
+				\end{itemize}											
+			\end{frame}		
+				
+		\subsection{Recording Scenario}
+			\begin{frame}{The CALLAS Expressivity Corpus}{Recording Scenario}																\begin{figure}
+					\includegraphics[width=0.8\textwidth]{images/Callas/experimentSetup}
+					\caption{Experiment setup}
+					\vspace*{-10pt}
+					\caption*{Source: \cite{2010MultimodalCorpusForGestureExpressivity}}
+				\end{figure}
+			\end{frame}
+		
+		\subsection{Recorded Data}
+			\begin{frame}{The CALLAS Expressivity Corpus}{Recorded Data}										
+				\begin{itemize}
+					\item Modalities:
+					\begin{itemize}
+						\item Audio:
+						 \begin{itemize}
+						 	\item Mono
+						 	\item 16 kHz sampling rate
+						 \end{itemize}
+						 \item Video
+						 \begin{itemize}
+						 	\item 2 video streams
+						 	\item 720 x 576px
+						 	\item 25 fps
+						 	\item 24 bit colour depth
+						 \end{itemize}
+						 \item Gesture
+						 \begin{itemize}
+						 	\item bare hands: position of hands
+						 	\item Wiimote: accelerometer data
+						 	\item data glove:angles between finger joints
+						 \end{itemize}
+					\end{itemize}
+				\end{itemize}
+			\end{frame}
+		\subsection{Application}
+			\begin{frame}{The CALLAS Expressivity Corpus}{Application}
+				\begin{itemize}
+					\item study cross-cultural differences
+					\item compare approaches to combine different modalities
+				\end{itemize}
+			\end{frame}	
 	
 	\section{The Bielefeld Speech and Gesture Alignment Corpus}
 		\subsection{Recording Scenario}
@@ -108,7 +199,7 @@
 			\end{frame}	
 	
 	\section{Sources}
-		\begin{frame}{Sources}
+		\begin{frame}[allowframebreaks]{Sources}
 			\bibliographystyle{IEEEtran}
 			\nocite{Bielefeld2010}
 			\nocite{Bielefeld2013}
